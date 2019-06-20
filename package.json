@@ -1,0 +1,28 @@
+{
+  "name": "hackdash-embed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "embed.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenUpSA/hackdash-embed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenUpSA/hackdash-embed/issues"
+  },
+  "homepage": "https://github.com/OpenUpSA/hackdash-embed#readme"
+}
