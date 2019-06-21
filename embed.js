@@ -12,8 +12,8 @@ const fetchProjectList = () => {
         _id: id,
         cover,
       }) => (`
-      <div id="hackdash-project">
-        <div class="hackdash-card-plate">
+      <div class="hackdash-project-wrapper">
+        <div class="hackdash-project-plate">
           <div
             style="background-image:url(${cover})"
             class="hackdash-project-image"></div>
