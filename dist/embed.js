@@ -23,7 +23,7 @@ const fetchProjectList = () => {
           </div>
           <div class="hackdash-line-divider"></div>
           <h3 class="hackdash-project-title">${title}</h3>
-          <p class="hackdash-project-description">${description}</p>
+          <p class="hackdash-project-description">${description.length > 70 ? `${description.substring(0, 70)}...` : description}</p>
           <div class="hackdash-button-wrapper"><a href="https://hackdash.org/projects/${id}" class="hackdash-button">VIEW&nbsp;THIS&nbsp;PROJECT</a>
           </div>
         </div>
