@@ -1,25 +1,36 @@
 const fetchProjectList = () => {
   fetch('https://hackdash.org/api/v2/vulekamali/projects')
     .then(response => response.json())
-    .then(projects => projects.filter(({ tags }) => !!tags.find(
-      region => region.toLowerCase() === document.querySelector('#hackdash-embed').dataset.hashtag
-    )).map(({ contributors,
-      title,
-      description,
-      cover,
-      _id: id
-    }) => (
-      
-    )));
+    .then(projects => {
+      const element = document.querySelector('#hackdash-embed');
+      const filteredProjects = projects.filter(({ tags }) => !!tags.find(
+        region => region.toLowerCase() === element.dataset.tag
+      ))
+      element.innerHTML = filteredProjects.map(({ contributors,
+        title,
+        description,
+        _id: id,
+        cover,
+      }) => (`
+      <div id="hackdash-project">
+        <div class="hackdash-card-plate">
+          <div
+            style="background-image:url(&quot;${cover})"
+            class="hackdash-project-image"></div>
+          <div class="hackdash-contributors">
+            <div class="hackdash-contributor-icon"></div>
+            <h6 class="hackdash-contributor-value">${contributors.length} Contributor</h6>
+          </div>
+          <div class="hackdash-line-divider"></div>
+          <h3 class="hackdash-project-title">${title}</h3>
+          <p class="hackdash-project-description">${description}</p>
+          <div class="hackdash-button-wrapper"><a href="https://hackdash.org/projects/${id}" class="hackdash-button">VIEW&nbsp;THIS&nbsp;PROJECT</a>
+          </div>
+        </div>
+      </div>`
+      )).join('')
+      return element.innerHTML;
+    });
 };
 
 fetchProjectList();
-
-// const filterProjects = (fetchProjectList()) => {
-//   const projects = fetchProjectList;
-//   console.log(111, projects);
-// };
-
-// filterProjects(fetchProjectList);
-
-// document.querySelector('.contributor').innerHTML = `Hello ${bob}`;
