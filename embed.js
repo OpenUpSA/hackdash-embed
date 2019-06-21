@@ -15,7 +15,7 @@ const fetchProjectList = () => {
       <div id="hackdash-project">
         <div class="hackdash-card-plate">
           <div
-            style="background-image:url(&quot;${cover})"
+            style="background-image:url(${cover})"
             class="hackdash-project-image"></div>
           <div class="hackdash-contributors">
             <div class="hackdash-contributor-icon"></div>
