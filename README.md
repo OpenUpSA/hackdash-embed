@@ -14,7 +14,7 @@ Insert this HTML in your page, and put the event tag on the hackdash projects in
 Development
 -----------
 
-Run the following and open `index.html`
+Run the following and open `dist/index.html`
 
 ```
 npm run dev

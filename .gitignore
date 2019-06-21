@@ -1,6 +1,6 @@
 # Built assets
 
-dist/
+dist/*.js
 
 # Dependency directories
 node_modules/
