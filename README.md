@@ -7,7 +7,7 @@ Usage
 Insert this HTML in your page, and put the event tag on the hackdash projects in `data-tag`.
 
 ```html
-<script src="https://openup.org.za/hackdash-embed/embed.js" defer></script>
+<script src="https://hackdash-embed.netlify.com/embed.js" defer></script>
 <div id="hackdash-embed" data-tag="...put event tag here like Northern Cape..."></div>
 ```
 
