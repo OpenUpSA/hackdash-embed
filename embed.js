@@ -4,7 +4,7 @@ const fetchProjectList = () => {
     .then(projects => {
       const element = document.querySelector('#hackdash-embed');
       const filteredProjects = projects.filter(({ tags }) => !!tags.find(
-        region => region.toLowerCase() === element.dataset.tag
+        region => region.toLowerCase() === element.dataset.tag.toLowerCase()
       ))
       element.innerHTML = filteredProjects.map(({ contributors,
         title,
