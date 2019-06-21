@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './embed.js',
+  entry: './src/embed.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'embed.js',
   },
   module: {
     rules: [

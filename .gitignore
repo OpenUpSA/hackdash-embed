@@ -1,2 +1,6 @@
+# Built assets
+
+dist/
+
 # Dependency directories
 node_modules/
