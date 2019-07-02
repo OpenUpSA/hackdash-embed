@@ -1,3 +1,5 @@
+import 'core-js/features/promise';
+
 const fetchProjectList = () => {
   window.fetch('https://hackdash.org/api/v2/vulekamali/projects')
     .then(response => response.json())
