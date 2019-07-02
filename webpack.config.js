@@ -1,5 +1,8 @@
 module.exports = {
-  entry: './src/embed.js',
+  entry: [
+    'whatwg-fetch',
+    './src/embed.js',
+  ],
   output: {
     filename: 'embed.js',
   },
