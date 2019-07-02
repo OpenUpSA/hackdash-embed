@@ -1,4 +1,5 @@
 import 'core-js/features/promise';
+import 'core-js/features/array/find';
 
 function embedProjects (projects) {
   const element = document.querySelector('#hackdash-embed');
