@@ -1,5 +1,7 @@
+import 'whatwg-fetch'
+
 const fetchProjectList = () => {
-  fetch('https://hackdash.org/api/v2/vulekamali/projects')
+  window.fetch('https://hackdash.org/api/v2/vulekamali/projects')
     .then(response => response.json())
     .then(projects => {
       const element = document.querySelector('#hackdash-embed');

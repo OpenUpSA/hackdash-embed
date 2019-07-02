@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "embed.js",
-  "dependencies": {},
+  "dependencies": {
+    "whatwg-fetch": "^3.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
